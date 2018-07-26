@@ -1,0 +1,608 @@
+@import "fonts";
+@import "general";
+
+/*Начало оформления стилей для сайта*/
+// Блок Шапка
+.header {
+    background-image: url("../images/bg_image1.png");
+    background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    
+    &__background {
+        background-color: rgba(195, 186, 164, 0.7);
+    }
+
+    &__flex {
+        padding: 40px 0 160px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+// Блок Логотипа
+.logo {
+
+    &__link {
+        display: block;
+        width: 135px;
+        height: 63px;
+        background-image: url("../images/logo.png");
+        background-repeat: no-repeat;
+        background-size: 135px 63px;
+
+        &_size {
+            width: 98px;
+            height: 46px;
+            background-size: 98px 46px;
+        }
+
+        &:hover {
+            color: #FFF;
+        }
+    }
+}
+   
+// Блок Навигации
+.nav {
+    
+    &__list {   
+        display: flex;
+    }
+
+    &__item {
+
+    }
+
+    &__link {
+        padding: 12px 14px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        text-decoration: none;
+
+        &:hover {
+            color: #FFF;
+            background-color: #d03958;
+        }
+    }  
+}
+
+
+
+// Блок Интро
+.intro {
+    margin-top: 165px;
+    display: flex;
+    position: relative; 
+    width: 100%;
+
+    .heading {
+
+        &__title {
+
+            &_color {
+                color: #161616;
+            }
+        }
+        
+        &__text {
+            max-width: 500px;
+            margin-top: 40px;
+            line-height: 28px;
+        }
+    }   
+}
+
+.registration {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #d03958;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+
+    &__title {
+        color: #FFF;
+        font-size: 22px;
+    }
+
+    &__list {
+
+    }
+
+    &__item {
+        margin-top: 15px;
+
+        &:first-child {
+            margin-top: 35px;
+        }
+
+        &:nth-child(n+5) {
+            margin-top: 25px;
+        }
+    }
+
+    &__label {
+        cursor: pointer;
+        display: flex;
+        position: relative;
+        color: #FFF;
+        font-family: 'pt_serifregular';
+        font-size: 20px;
+
+        &::before {
+            content: "";
+            margin-right: 20px;
+            display: block;
+            width: 19px;
+            height: 18px;
+            border-radius: 5px;
+            background-color: #FFF;
+        } 
+    }
+
+    &__input {
+
+        &_hovered {
+
+            &:hover {
+                background-color: #e3d5b8;
+                color: #000;
+            }
+        }
+    }
+}
+
+
+
+
+// Блок Сервиса
+.services {
+    margin-top: 40px;
+
+    .heading {
+        width: 375px;
+        display: flex;
+        justify-content: space-between;
+
+        &__title {
+            font-family: 'couturebold';
+            font-size: 50px;
+
+            &_color {
+                color: #161616;
+            }
+        }
+    }   
+}
+
+//  Блок Карточек (обертка)
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+}
+
+//  Блок Карточек
+.card  {
+    //Для прижатия текста вниз  
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+        margin-top: 45px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    &_emblem1 {
+        &::before {
+            width: 174px;
+            height: 150px;
+            background-image: url("../images/icon_service1.png"); 
+        }
+    }
+
+    &_emblem2 {
+        &::before {
+            width: 142px;
+            height: 144px;
+            background-image: url("../images/icon_service2.png");
+            background-size: 142px 144px;
+        }
+    }
+
+    &_emblem3 {
+        &::before {
+            width: 120px;
+            height: 157px;
+            background-image: url("../images/icon_service3.png");
+            background-size: 120px 157px;
+        }
+    }
+    
+    &_emblem4 {
+        &::before {
+            width: 153px;
+            height: 153px;
+            background-image: url("../images/icon_service4.png");
+            background-size: 153px 153px;
+        }
+    }
+}
+
+
+
+
+// Блок Our Story
+.story {
+    margin-top: 70px;
+    background-color: #d03958;
+
+    &__content {
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text {
+        max-width: 65%;
+        color: #FFF;
+        line-height: 28px;
+    }
+
+    &__links {
+
+    }
+
+    &__link {
+        padding: 25px 72px;
+
+        &:hover {
+            color: #FFF;
+            background-color: #161616;
+        }
+    }
+}
+
+
+
+
+// Блок карточек с ценами 
+.price {
+    background-color: #e3d5b8;
+    padding-top: 65px;
+
+    .heading {
+        display: flex;
+        justify-content: center;
+        color: #1f1f1f;
+        font-size: 50px;
+    }
+}
+
+// Обертка карточек
+.boxes {
+    margin-top: 55px;
+    display: flex;
+    justify-content:space-between;
+}
+
+// Блок одной карточки, потом происходит наследование на остальные
+.box {
+    width: 318px;
+    background-color: #FFF;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    }
+
+    &_relative {
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            border: 40px solid transparent;
+            border-left: 40px solid #b4a993;
+            border-top: 40px solid #b4a993;
+            border-top-left-radius: 5px; 
+            position: absolute;
+        }
+    }
+
+    &__marker {
+        color: #1f1f1f;
+        font-size: 14px;
+        position: absolute;
+        left: 5px;
+        top: 20px;
+        transform: rotate(-45deg);
+    }
+ 
+    &__text {
+        margin-top: 35px;
+        font-size: 22px;
+    }
+
+    &__title {
+        margin-top: 40px;
+        font-size: 60px;
+    }
+
+    &__list {
+        margin-top: 30px;
+    }
+
+    &__item {
+        margin-top: 10px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__links {
+        width: 210px;
+        margin-top: 35px;
+        align-self: center;
+    }
+
+    &__link {
+        // для выравнивая текста, padding: 16px 55px 13px 55px;
+        padding: 16px 55px;
+
+        &:hover {
+            color: #FFF;
+            background-color: #d03958;
+        }
+    }
+}
+
+
+
+
+// Отзывы и галлерея
+// Блок Отзывы и галлерея
+.downside {
+    margin-top: 135px;
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+// Блок "Отзывы"
+.testimonials {
+    width: 490px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    &__heading {
+        color: #1f1f1f;
+        font-size: 50px;
+    }  
+}
+
+// Блок "Отзыв"
+.testimonial {
+    margin-top: 60px;
+
+    // Блок "Контент"
+    .content {
+        width: 440px;
+        padding: 25px 60px 25px 25px;
+        border-radius: 5px; 
+        position: relative;
+
+        &_icon1 {
+            &::before {
+                background-image: url("../images/icon_testimonial1.png");
+            }
+        }
+
+        &_icon2 {
+            &::before {
+                background-image: url("../images/icon_testimonial2.png");
+            }
+        }
+
+        &__text {
+            line-height: 28px;
+        }      
+
+        &__signature {
+            margin-top: 20px;
+        }
+
+        &__link {
+            color: #d03958;
+            font-family: 'montserratbold';
+            font-size: 20px;
+            text-decoration: none;
+
+            &:hover {
+                color: #000;
+            }
+        }
+
+        &:hover {
+            background-color: #e3d5b8;
+        }
+    }
+}
+
+// Блок "Галлерея"
+.gallery {
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__heading {
+        font-size: 50px;
+    }
+
+    &__list{
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        margin-top: 30px;
+        border-radius: 50%;
+
+        &:nth-child(-n+3) {
+            margin-top: 0;
+        }
+
+        &:hover {
+            box-shadow: 0 -15px 25px rgba(208, 57, 88, .9);
+        }  
+    }
+
+    &__links {
+
+    }
+
+    &__link {
+        margin-top: 50px;
+        color: #d03958;
+        font-size: 20px;
+        text-transform: uppercase;
+
+        &:hover {
+            color: #000;
+        }
+
+        &_icon1 {
+            &::before {
+            background-image: url("../images/icon_gallery1.png");
+            }
+        }
+
+        &_icon2 {
+            &::before {
+                background-image: url("../images/icon_gallery2.png");
+            }
+        } 
+
+        &_icon3 {
+            &::before {
+                background-image: url("../images/icon_gallery3.png");
+            }
+        }
+
+        &_icon4 {
+            &::before {
+                background-image: url("../images/icon_gallery4.png");
+            }
+        }
+    
+        &_icon5 {
+            &::before {
+                background-image: url("../images/icon_gallery5.png");
+            }
+        }
+    
+        &_icon6 {
+            &::before {
+                background-image: url("../images/icon_gallery6.png");
+            }
+        }
+    }
+}
+
+
+
+
+// Неужели, вот и блок футера
+.footer {
+    background-color: #161616;
+    margin-top: 120px;
+    padding: 70px 0 60px 0;
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.copy {
+    margin-top: 10px;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 10px;
+        color: #FFF;
+
+        &:last-child {
+            margin-right: 0;  
+        }
+
+        &_bordered {
+            border-left: 2px solid #b1b1b1;
+            border-right: 2px solid #b1b1b1;
+            padding: 0 10px;
+        }  
+    }
+
+    &__link {
+        color: #d03958;
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 481px) and (max-width:768px) {
+
+}
+
+
+@media (min-width:769px) {
+
+}

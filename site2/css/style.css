@@ -1,0 +1,730 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'pt_serifregular';
+  src: url("../fonts/pt_serif/pt_serif-web-regular-webfont.eot");
+  src: url("../fonts/pt_serif/pt_serif-web-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/pt_serif/pt_serif-web-regular-webfont.woff2") format("woff2"), url("../fonts/pt_serif/pt_serif-web-regular-webfont.woff") format("woff"), url("../fonts/pt_serif/pt_serif-web-regular-webfont.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pt_serifbold';
+  src: url("pt_serif-web-bold-webfont.eot");
+  src: url("pt_serif-web-bold-webfont.eot?#iefix") format("embedded-opentype"), url("pt_serif-web-bold-webfont.woff2") format("woff2"), url("pt_serif-web-bold-webfont.woff") format("woff"), url("pt_serif-web-bold-webfont.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratregular';
+  src: url("../fonts/montserrat/montserrat-regular-webfont.eot");
+  src: url("../fonts/montserrat/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat/montserrat-regular-webfont.woff") format("woff"), url("../fonts/montserrat/montserrat-regular-webfont.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratbold';
+  src: url("../fonts/montserrat/montserrat-bold-webfont.eot");
+  src: url("../fonts/montserrat/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat/montserrat-bold-webfont.woff") format("woff"), url("../fonts/montserrat/montserrat-bold-webfont.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'couturebold';
+  src: url("../fonts/couture/couture-bold-webfont.eot");
+  src: url("../fonts/couture/couture-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/couture/couture-bold-webfont.woff2") format("woff2"), url("../fonts/couture/couture-bold-webfont.woff") format("woff"), url("../fonts/couture/couture-bold-webfont.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* line 1, D:/Google chrome/Maks/Hillel/Lesson_12/scss/_general.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 6, D:/Google chrome/Maks/Hillel/Lesson_12/scss/_general.scss */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 12, D:/Google chrome/Maks/Hillel/Lesson_12/scss/_general.scss */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* line 20, D:/Google chrome/Maks/Hillel/Lesson_12/scss/_general.scss */
+.title {
+  color: #d03958;
+  font-family: 'montserratbold';
+  font-size: 90px;
+  text-transform: uppercase;
+}
+
+/* line 28, D:/Google chrome/Maks/Hillel/Lesson_12/scss/_general.scss */
+.text {
+  color: #161616;
+  font-family: 'pt_serifregular';
+  font-size: 20px;
+}
+
+/* line 34, D:/Google chrome/Maks/Hillel/Lesson_12/scss/_general.scss */
+.decor {
+  display: block;
+  color: #1b1b1b;
+  font-family: 'montserratbold';
+  font-size: 18px;
+}
+
+/* line 41, D:/Google chrome/Maks/Hillel/Lesson_12/scss/_general.scss */
+.button {
+  display: block;
+  color: #161616;
+  font-family: 'montserratbold';
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: #e3d5b8;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* line 54, D:/Google chrome/Maks/Hillel/Lesson_12/scss/_general.scss */
+.photo::before, .account::before {
+  content: "";
+  display: block;
+  width: 105px;
+  height: 105px;
+  background-repeat: no-repeat;
+  background-size: 105px 105px;
+  border-radius: 50%;
+  box-shadow: 0 -15px 25px rgba(227, 213, 184, 0.9);
+}
+
+/* line 69, D:/Google chrome/Maks/Hillel/Lesson_12/scss/_general.scss */
+.account::before {
+  position: absolute;
+  top: 20px;
+  right: -50px;
+}
+
+/* line 79, D:/Google chrome/Maks/Hillel/Lesson_12/scss/_general.scss */
+.emblem::before {
+  content: "";
+  display: block;
+  width: 174px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: 174px 150px;
+  margin: auto;
+}
+
+/* line 92, D:/Google chrome/Maks/Hillel/Lesson_12/scss/_general.scss */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+input[type="submit"] {
+  outline: none;
+  border: none;
+  width: 353px;
+  padding: 20px;
+  background-color: #FFF;
+  border-radius: 5px;
+  color: #b5b5b5;
+  font-family: 'pt_serifregular';
+  font-size: 20px;
+}
+
+/* line 108, D:/Google chrome/Maks/Hillel/Lesson_12/scss/_general.scss */
+input[type="submit"] {
+  cursor: pointer;
+  background-color: #161616;
+  color: #FFF;
+  font-family: 'montserratbold';
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+/* line 117, D:/Google chrome/Maks/Hillel/Lesson_12/scss/_general.scss */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* line 122, D:/Google chrome/Maks/Hillel/Lesson_12/scss/_general.scss */
+input[type="checkbox"]:checked + .pressed::after {
+  content: "\2714";
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  color: #000;
+}
+
+/*Начало оформления стилей для сайта*/
+/* line 6, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.header {
+  background-image: url("../images/bg_image1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 12, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.header__background {
+  background-color: rgba(195, 186, 164, 0.7);
+}
+
+/* line 16, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.header__flex {
+  padding: 40px 0 160px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 28, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.logo__link {
+  display: block;
+  width: 135px;
+  height: 63px;
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-size: 135px 63px;
+}
+
+/* line 36, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.logo__link_size {
+  width: 98px;
+  height: 46px;
+  background-size: 98px 46px;
+}
+
+/* line 42, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.logo__link:hover {
+  color: #FFF;
+}
+
+/* line 51, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.nav__list {
+  display: flex;
+}
+
+/* line 59, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.nav__link {
+  padding: 12px 14px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* line 65, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.nav__link:hover {
+  color: #FFF;
+  background-color: #d03958;
+}
+
+/* line 75, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.intro {
+  margin-top: 165px;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+/* line 85, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.intro .heading__title_color {
+  color: #161616;
+}
+
+/* line 90, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.intro .heading__text {
+  max-width: 500px;
+  margin-top: 40px;
+  line-height: 28px;
+}
+
+/* line 98, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.registration {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  background-color: #d03958;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+}
+
+/* line 109, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.registration__title {
+  color: #FFF;
+  font-size: 22px;
+}
+
+/* line 118, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.registration__item {
+  margin-top: 15px;
+}
+
+/* line 121, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.registration__item:first-child {
+  margin-top: 35px;
+}
+
+/* line 125, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.registration__item:nth-child(n+5) {
+  margin-top: 25px;
+}
+
+/* line 130, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.registration__label {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  color: #FFF;
+  font-family: 'pt_serifregular';
+  font-size: 20px;
+}
+
+/* line 138, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.registration__label::before {
+  content: "";
+  margin-right: 20px;
+  display: block;
+  width: 19px;
+  height: 18px;
+  border-radius: 5px;
+  background-color: #FFF;
+}
+
+/* line 153, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.registration__input_hovered:hover {
+  background-color: #e3d5b8;
+  color: #000;
+}
+
+/* line 165, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.services {
+  margin-top: 40px;
+}
+
+/* line 168, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.services .heading {
+  width: 375px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 173, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.services .heading__title {
+  font-family: 'couturebold';
+  font-size: 50px;
+}
+
+/* line 177, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.services .heading__title_color {
+  color: #161616;
+}
+
+/* line 185, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 85px;
+}
+
+/* line 192, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 198, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.card__text {
+  margin-top: 45px;
+  line-height: 28px;
+  text-align: center;
+}
+
+/* line 205, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.card_emblem1::before {
+  width: 174px;
+  height: 150px;
+  background-image: url("../images/icon_service1.png");
+}
+
+/* line 213, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.card_emblem2::before {
+  width: 142px;
+  height: 144px;
+  background-image: url("../images/icon_service2.png");
+  background-size: 142px 144px;
+}
+
+/* line 222, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.card_emblem3::before {
+  width: 120px;
+  height: 157px;
+  background-image: url("../images/icon_service3.png");
+  background-size: 120px 157px;
+}
+
+/* line 231, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.card_emblem4::before {
+  width: 153px;
+  height: 153px;
+  background-image: url("../images/icon_service4.png");
+  background-size: 153px 153px;
+}
+
+/* line 244, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.story {
+  margin-top: 70px;
+  background-color: #d03958;
+}
+
+/* line 248, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.story__content {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 254, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.story__text {
+  max-width: 65%;
+  color: #FFF;
+  line-height: 28px;
+}
+
+/* line 264, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.story__link {
+  padding: 25px 72px;
+}
+
+/* line 267, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.story__link:hover {
+  color: #FFF;
+  background-color: #161616;
+}
+
+/* line 278, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.price {
+  background-color: #e3d5b8;
+  padding-top: 65px;
+}
+
+/* line 282, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.price .heading {
+  display: flex;
+  justify-content: center;
+  color: #1f1f1f;
+  font-size: 50px;
+}
+
+/* line 291, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.boxes {
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 298, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.box {
+  width: 318px;
+  background-color: #FFF;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 307, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.box:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* line 311, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.box_relative {
+  position: relative;
+}
+
+/* line 314, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.box_relative::before {
+  content: "";
+  display: block;
+  border: 40px solid transparent;
+  border-left: 40px solid #b4a993;
+  border-top: 40px solid #b4a993;
+  border-top-left-radius: 5px;
+  position: absolute;
+}
+
+/* line 325, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.box__marker {
+  color: #1f1f1f;
+  font-size: 14px;
+  position: absolute;
+  left: 5px;
+  top: 20px;
+  transform: rotate(-45deg);
+}
+
+/* line 334, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.box__text {
+  margin-top: 35px;
+  font-size: 22px;
+}
+
+/* line 339, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.box__title {
+  margin-top: 40px;
+  font-size: 60px;
+}
+
+/* line 344, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.box__list {
+  margin-top: 30px;
+}
+
+/* line 348, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.box__item {
+  margin-top: 10px;
+}
+
+/* line 351, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.box__item:first-child {
+  margin-top: 0;
+}
+
+/* line 356, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.box__links {
+  width: 210px;
+  margin-top: 35px;
+  align-self: center;
+}
+
+/* line 362, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.box__link {
+  padding: 16px 55px;
+}
+
+/* line 366, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.box__link:hover {
+  color: #FFF;
+  background-color: #d03958;
+}
+
+/* line 378, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.downside {
+  margin-top: 135px;
+}
+
+/* line 381, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.downside__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 388, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.testimonials {
+  width: 490px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* line 395, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.testimonials__heading {
+  color: #1f1f1f;
+  font-size: 50px;
+}
+
+/* line 402, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.testimonial {
+  margin-top: 60px;
+}
+
+/* line 406, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.testimonial .content {
+  width: 440px;
+  padding: 25px 60px 25px 25px;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* line 413, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.testimonial .content_icon1::before {
+  background-image: url("../images/icon_testimonial1.png");
+}
+
+/* line 419, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.testimonial .content_icon2::before {
+  background-image: url("../images/icon_testimonial2.png");
+}
+
+/* line 424, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.testimonial .content__text {
+  line-height: 28px;
+}
+
+/* line 428, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.testimonial .content__signature {
+  margin-top: 20px;
+}
+
+/* line 432, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.testimonial .content__link {
+  color: #d03958;
+  font-family: 'montserratbold';
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* line 438, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.testimonial .content__link:hover {
+  color: #000;
+}
+
+/* line 443, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.testimonial .content:hover {
+  background-color: #e3d5b8;
+}
+
+/* line 450, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.gallery {
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 456, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.gallery__heading {
+  font-size: 50px;
+}
+
+/* line 460, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.gallery__list {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* line 467, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.gallery__item {
+  margin-top: 30px;
+  border-radius: 50%;
+}
+
+/* line 471, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.gallery__item:nth-child(-n+3) {
+  margin-top: 0;
+}
+
+/* line 475, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.gallery__item:hover {
+  box-shadow: 0 -15px 25px rgba(208, 57, 88, 0.9);
+}
+
+/* line 484, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.gallery__link {
+  margin-top: 50px;
+  color: #d03958;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* line 490, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.gallery__link:hover {
+  color: #000;
+}
+
+/* line 495, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.gallery__link_icon1::before {
+  background-image: url("../images/icon_gallery1.png");
+}
+
+/* line 501, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.gallery__link_icon2::before {
+  background-image: url("../images/icon_gallery2.png");
+}
+
+/* line 507, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.gallery__link_icon3::before {
+  background-image: url("../images/icon_gallery3.png");
+}
+
+/* line 513, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.gallery__link_icon4::before {
+  background-image: url("../images/icon_gallery4.png");
+}
+
+/* line 519, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.gallery__link_icon5::before {
+  background-image: url("../images/icon_gallery5.png");
+}
+
+/* line 525, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.gallery__link_icon6::before {
+  background-image: url("../images/icon_gallery6.png");
+}
+
+/* line 536, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.footer {
+  background-color: #161616;
+  margin-top: 120px;
+  padding: 70px 0 60px 0;
+}
+
+/* line 541, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 547, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.copy {
+  margin-top: 10px;
+}
+
+/* line 550, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.copy__list {
+  display: flex;
+}
+
+/* line 554, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.copy__item {
+  margin-right: 10px;
+  color: #FFF;
+}
+
+/* line 558, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.copy__item:last-child {
+  margin-right: 0;
+}
+
+/* line 562, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.copy__item_bordered {
+  border-left: 2px solid #b1b1b1;
+  border-right: 2px solid #b1b1b1;
+  padding: 0 10px;
+}
+
+/* line 569, D:/Google chrome/Maks/Hillel/Lesson_12/scss/style.scss */
+.copy__link {
+  color: #d03958;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=../css/style.map */
