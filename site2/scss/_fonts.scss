@@ -1,0 +1,60 @@
+// PTSerif
+@font-face {
+    font-family: 'pt_serifregular';
+    src: url('../fonts/pt_serif/pt_serif-web-regular-webfont.eot');
+    src: url('../fonts/pt_serif/pt_serif-web-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pt_serif/pt_serif-web-regular-webfont.woff2') format('woff2'),
+         url('../fonts/pt_serif/pt_serif-web-regular-webfont.woff') format('woff'),
+         url('../fonts/pt_serif/pt_serif-web-regular-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_serifbold';
+    src: url('pt_serif-web-bold-webfont.eot');
+    src: url('pt_serif-web-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('pt_serif-web-bold-webfont.woff2') format('woff2'),
+         url('pt_serif-web-bold-webfont.woff') format('woff'),
+         url('pt_serif-web-bold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+// Montserrat
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat/montserrat-regular-webfont.eot');
+    src: url('../fonts/montserrat/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-regular-webfont.woff') format('woff'),
+         url('../fonts/montserrat/montserrat-regular-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat/montserrat-bold-webfont.eot');
+    src: url('../fonts/montserrat/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-bold-webfont.woff') format('woff'),
+         url('../fonts/montserrat/montserrat-bold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+// Couture
+@font-face {
+    font-family: 'couturebold';
+    src: url('../fonts/couture/couture-bold-webfont.eot');
+    src: url('../fonts/couture/couture-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/couture/couture-bold-webfont.woff2') format('woff2'),
+         url('../fonts/couture/couture-bold-webfont.woff') format('woff'),
+         url('../fonts/couture/couture-bold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+}

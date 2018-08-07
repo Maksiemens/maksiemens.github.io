@@ -1,0 +1,28 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+// Mobile First
+// Выравнивание всей страницы 1550px/
+.alignment-content {
+    max-width: 1550px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+// Общие классы для всей страницы
+.title {
+    color: #FFF;
+    font-family: 'Proxima Nova Bold';
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.text {
+    color: #000;
+	font-family: 'Proxima Nova Regular';
+    font-size: 15px;
+    line-height: 18px;
+}
