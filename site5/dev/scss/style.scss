@@ -1,0 +1,189 @@
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "template";
+@import "general";
+
+
+
+.page {
+
+}
+
+.header {
+	background: url('../images/bg_intro_1.png') center / cover no-repeat;
+	padding: 75px 0 265px 0;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+
+	&__link {
+		display: block;
+		width: 68px;
+		height: 68px;
+	}
+
+	&__svg {
+		fill: $color_4;
+	}
+}
+
+.nav {
+	width: (485/1190) * 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__list {
+		width: (326/485) * 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+
+	}
+
+	&__link {
+		display: block;
+		position: relative;
+		@include font-sans-serif('GothamProBold', 14px, $color_1, 700);
+		text-transform: uppercase;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 0;
+			height: 3px;
+
+			position: absolute;
+			left: 0;
+			bottom: -30px;
+			background-color: $color_4;
+			transition: width .3s ease-out;
+		}
+
+		&:hover::after {
+			width: 100%;
+		}
+
+		&_active {
+			&::after {
+				width: 100%;	
+			}
+		}
+	}
+
+	&__buttons {
+
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+		padding: 20px 25px 20px 35px;
+		background-color: $color_7;
+		border-radius: 5px;
+		@include font-sans-serif('GothamProBold', 16px, $color_1, 700);
+		transition: background-color .3s ease;
+
+		&:hover {
+			background-color: $color_4;
+		}
+	}
+
+	&__svg {
+		fill: $color_1;
+		width: 16px;
+		height: 16px;
+		margin-left: 20px;
+		transform: rotate(-90deg);
+	}
+}
+
+.heading {
+	width: (530/1190) * 100%;
+	margin-top: 195px;
+
+	&__title {
+		@include font-sans-serif('MontserratBold', 60px, $color_1, 700);
+		text-transform: uppercase;
+	}
+
+	&__text {
+		margin-top: 40px;
+		@include font-sans-serif('GothamProMedium', 16px, $color_1, 500, 24px);
+	}
+}
+
+.form {
+	margin-top: 25px;
+	width: 650px;
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		width: 280px;
+		padding: 19px 25px;
+		display: flex;
+		align-items: center;
+
+		background-color: $color_1;
+		border-radius: 3px;	
+
+		&_submit {
+			width: 65px;
+			padding: 0px;
+			border-radius: 5px;
+			background-color: $color_4;
+			position: relative;
+		}
+	}
+
+	&__input {
+		width: 233px;
+		@include font-sans-serif('MontserratRegular', 14px, $color_5, 400);
+
+		&_submit {
+			// padding: 18px;
+			// background-color: transparent;
+		}
+	}
+
+	&__svg {
+		fill: $color_4;
+		width: 22px;
+		height: 22px;
+
+		&_email {
+
+		}
+
+		&_submit {
+			fill: $color_1;
+			width: 16px;
+			height: 16px;
+			position: absolute;
+			top: 22px;
+			left: 25px;
+		}
+	}
+
+
+
+}
+
+
+.btn {
+	padding: 25px;
+}

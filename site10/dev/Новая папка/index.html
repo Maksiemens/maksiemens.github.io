@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="introduction">
+
+          <div class="logo"></div>
+
+          <ul class="nav">
+            <li class="nav__item">
+              <a href="#" class="nav__item-link">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__item-link">О воде</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__item-link">Доставка</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__item-link">Товары</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__item-link">Контакты</a>
+            </li>
+          </ul>    
+
+          <div class="info">
+            <div class="info__left">
+              <div class="info__left-wrap">
+                <div class="info__title">Доставка воды</div>
+                <div class="info__city">Одесса</div>
+              </div>
+              <div class="info__langs">
+                <a href="#" class="info__langs-link info__langs-link--active">Рус</a>
+                <a href="#" class="info__langs-link">Укр</a>
+              </div>
+            </div>
+            <div class="info__right">
+              <ul class="info__numbers">
+                <li class="info__number">
+                  <a href="#" class="info__number-link">066 224 20 20</a>
+                </li>
+                <li class="info__number">
+                  <a href="#" class="info__number-link">066 224 20 20</a>
+                </li>
+                <li class="info__number">
+                  <a href="#" class="info__number-link">066 224 20 20</a>
+                </li>
+              </ul>
+              <button class="button info__button">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Guide (nav_sticky) -->
+    <nav class="guide">
+      <div class="container">
+        <div class="navigation">
+          <div class="navigation__logo"></div>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a target="_blank" href="#" class="navigation__link">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a target="_blank" href="#" class="navigation__link">О воде</a>
+            </li>
+            <li class="navigation__item">
+              <a target="_blank" href="#" class="navigation__link">Доставка</a>
+            </li>
+            <li class="navigation__item">
+              <a target="_blank" href="#" class="navigation__link">Товары</a>
+            </li>
+            <li class="navigation__item">
+              <a target="_blank" href="#" class="navigation__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro -->
+    <div class="intro">
+      <div class="container">
+        <div class="opening">
+          <div class="product">
+            <div class="product__titles">
+              <p class="product__title">Природная</p>
+              <p class="product__title product__title_size-l">экологически чистая</p>
+              <p class="product__title">вода</p>
+            </div>  
+            <div class="product__background"></div>
+            <div class="product__comments">
+              <p class="product__text">Стоимость одного бутыля воды ТМ "Петроверовская" (18.9 л) - 
+                <span class="product__text product__text_strong">57 грн</span>
+              </p>
+              <p class="product__text">Залоговая стоимость одного бутыля (тары 18.9л) - 130 грн</p>
+            </div>
+          </div>
+          <div class="order">
+            <h3 class="order__title">Сделайте заказ Online - 24/7</h3>
+            <form class="registration__form">          
+              <div class="registration__data">           
+                <label for="registration-name" class="registration__label">Имя:</label>
+                <input id="registration-name" class="registration__input" type="text" placeholder="Максон" >
+              </div>
+              <div class="registration__data">
+                <label for="registration-tel" class="registration__label">+3 8</label>
+                <input id="registration-tel" class="registration__input" type="tel" placeholder="(097) 123 45 67" >
+              </div>
+              <div class="registration__data">
+                <label for="registration-address" class="registration__label">Адрес:</label>
+                <input id="registration-address" class="registration__input" type="text" placeholder="Полтавская">
+              </div>  
+              <div class="registration__residential">
+                <div class="registration__data">
+                  <label for="registration-house" class="registration__label">№ Дома:</label>
+                  <input id="registration-house" class="registration__input registration__input_size-l" type="text" placeholder="10">
+                </div>
+                <div class="registration__data">
+                  <label for="registration-apartment" class="registration__label">№ Квартиры:</label>
+                  <input id="registration-apartment" class="registration__input registration__input_size-l" type="text" placeholder="234" >
+                </div>
+              </div>              
+              <div class="calculation__form">
+                <div class="calculation__quantity">
+                  <label class="calculation__label">Кол-во бутылей воды:</label>                                  
+                  <button id="minus" class="calculation__button">-</button>
+                  <input id="result" class="calculation__input calculation__input_size-l" type="text" placeholder="2" disabled>
+                  <button id="plus" class="calculation__button">+</button>
+                </div>
+                <div class="calculation__quantity">
+                  <label class="calculation__label">Всего к оплате:</label>    
+                  <input class="calculation__input" type="text" placeholder="104 грн" disabled>
+                </div>  
+                <p class="calculation__text">Цена рассчитана без учета залоговой стоимости бутылей</p>
+              </div>
+              <div class="registration__buttons">
+                <button class="registration__button">Заказать!</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Instruction -->
+    <div class="instruction">
+      <div class="container">
+        <div class="manual">
+          <h2 class="manual__title">Как сделать заказ?</h2>
+          <div class="cards">
+            <section class="card">
+              <h4 class="card__title">Позвоните нам
+                <span class="card__text">по любому ниже указанному номеру</span>
+              </h4>
+              <div class="card__background card__background_tel"></div>
+              <ul class="card__numbers">
+                <li class="card__number">
+                  <a target="_blank" href="" class="card__link">(066) 224 20 20</a>
+                </li>
+                <li class="card__number">
+                  <a target="_blank" href="" class="card__link">(068) 224 20 20</a>
+                </li>
+                <li class="card__number">
+                  <a target="_blank" href="" class="card__link">(073) 224 20 20</a>
+                </li>
+              </ul>
+            </section>
+            <div class="next-step"></div>
+            <section class="card">
+              <h4 class="card__title">Укажите точный адрес</h4>
+              <div class="card__background card__background_home"></div>
+              <p class="card__text">по которомубудет осуществлена доставка</p>
+            </section>
+            <div class="next-step"></div>
+            <section class="card">
+              <h4 class="card__title">Укажите нужное количество бутылей</h4>
+              <div class="card__background card__background_bottles"></div>
+              <p class="card__text">воды ТМ "Петроверовская" 18,9л</p>
+            </section>
+            <div class="next-step"></div>
+            <section class="card">
+              <h4 class="card__title">Укажите дату</h4>
+              <div class="card__background card__background_time"></div>
+              <p class="card__text">и часовой промежуток времени, в течении которого Вам будет удобно ожидать заказ</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Specification -->
+    <div class="specification">
+      <div class="container">     
+        <div class="choice">
+          <h1 class="choice__title">Почему выбирают именно нас?</h1>
+          <div class="description">
+            <div class="intelligence">
+              <section class="intelligence__section"> 
+                <div class="intelligence__background intelligence__background_eco"></div>    
+                <article class="intelligence__article">           
+                  <h5 class="intelligence__title">Эталонное качество</h5>
+                  <p class="intelligence__text">
+                    Природная питьевая 
+                    <a target="_blank" title="Петроверовская" class="intelligence__link" href="#">Вода "Петроверовская"</a>,
+                    добывается из подземного источника - артезианской скважины Юрского водоносного горизонта, расположенной в
+                    экологически чистом регионе, в 102 км от Одессы, в селе Петроверовка, Ширяевского района. Наша вода обладает
+                    оптимальным содержанием всех необходимых
+                    <a target="_blank" title="Макро и микроэлементы" class="intelligence__link" href="#">макро и микроэлементов</a>,
+                    а также полностью соответствует установленным медицинским критериям безопасности. Качество продукции контролируется
+                    ГП "Одессастандартметрология".
+                  </p>
+                </article>
+              </section>
+              <section class="intelligence__section intelligence__section_right-side intelligence__section_decoration"> 
+                <div class="intelligence__background intelligence__background_family"></div>
+                <article class="intelligence__article">
+                  <h5 class="intelligence__title">Идеально подходит для всей семьи</h5>                
+                  <p class="intelligence__text">
+                    Благодаря природному происхождению, и сбалансированному составу минеральных веществ, вода «Петроверовская» превосходно подходит
+                    для ежедневного употребления как взрослым так и детям*, в неограниченном количестве. Употребление качественной воды способствует
+                    укреплению иммунитета а так же благоприятно влияет на пищеварительный процесс. Использование природной воды в приготовлении
+                    напитков и еды безусловно улучшает их вкус!
+                  </p>
+                  <p class="intelligence__text intelligence__text_strong">
+                    Детям в возрасте до 2 лет, употребление рекомендовано после предварительного кипячения.
+                  </p>
+                </article>  
+              </section>
+              <section class="intelligence__section"> 
+                <div class="intelligence__background intelligence__background_like"></div>
+                <article class="intelligence__article">
+                  <h5 class="intelligence__title">Максимально комфортный сервис</h5>                
+                  <p class="intelligence__text">
+                    Нашей компанией осуществляется
+                    <a target="_blank" title="Доставка воды в Одессе" class="intelligence__link" href="#">Доставка воды в Одессе</a> на дом, в офисы и
+                    школы. На сайте Вы можете легко и быстро
+                    <a target="_blank" title="Заказать воду" class="intelligence__link" href="#">Заказать воду</a>, и даже круглосуточно, через
+                    <a target="_blank" title="Online - 24/7" class="intelligence__link" href="#">Online - 24/7</a>.
+                    <a target="_blank" title="Доставка воды" class="intelligence__link" href="#">Доставка воды</a> осуществляется исключительно в
+                    удобное для Вас время. Условия сотрудничества в разделе
+                    <a target="_blank" title="Доставка воды Одесса" class="intelligence__link" href="#">Доставка воды Одесса</a>.
+                  </p>
+                </article>
+              </section>
+            </div>
+            <div class="documentation">
+              <h5 class="documentation__title">Подтвержденное безупречное качество!</h5>                
+              <div class="documentation__background"></div>
+              <div class="documentation__buttons">
+                <button class="documentation__button"></button>
+                <button class="documentation__button"></button>
+                <button class="documentation__button"></button>
+                <button class="documentation__button"></button>
+              </div>
+            </div>  
+          </div>   
+        </div>
+      </div>
+    </div>
+
+    <!-- Bid -->
+    <div class="bid">
+      <div class="container">
+        <div class="appeal">           
+          <div class="appeal__background appeal__background_bottles"></div>
+          <div class="handling">
+            <h5 class="handling__title">Оставьте заявку и мы свяжемся с Вами</h5>
+            <form class="handling__form">
+              <div class="handling__contact">
+                <label for="handling-name" class="handling__label">Имя:</label>
+                <input id="handling-name" class="handling__input" type="text" placeholder="Максон">
+              </div>
+              <div class="handling__contact">
+                <label for="handling-tel" class="handling__label">+38:</label>
+                <input id="handling-tel" class="input handling__input" type="tel" placeholder="(097) 123 45 67">
+              </div>
+              <div class="handling__buttons">
+                <button class="handling__button">Заказать звонок</button>
+              </div>        
+            </form>   
+          </div>
+          <div class="appeal__background appeal__background_jug"></div>    
+        </div>
+      </div>
+    </div>
+
+    <!-- Schedule -->
+    <div class="schedule">
+      <div class="container">
+        <div class="service">
+          <h2 class="service__title">График работы?</h2>
+          <div class="condition">
+            <section class="booking">
+              <h4 class="booking__title">Заказ воды</h4>
+              <div class="acceptance">
+                <h6 class="acceptance__title">Прием заказов</h6>
+                <ul class="acceptance__list">
+                  <li class="acceptance__item">Пн - Сб:</li>
+                  <li class="acceptance__item">9.00 - 18.00</li>
+                  <li class="acceptance__item">Вс:</li>              
+                  <li class="acceptance__item">Выходной</li>
+                  <li class="acceptance__item acceptance__item_remark">А также через -
+                    <a class="acceptance__link" href="#">Online 24/7</a>
+                  </li>             
+                  <li class="acceptance__item">Без выходных</li>
+                  <li class="acceptance__item">Круглосуточно</li>
+                </ul>
+              </div>
+            </section>
+            <section class="delivery">
+              <h4 class="delivery__title">Доставка воды</h4>
+              <div class="occurrence">
+                <div class="locality">
+                  <h6 class="locality__title">Все районы города</h6>
+                  <ul class="locality__list">
+                    <li class="locality__item">Пн - Сб:</li>
+                    <li class="locality__item">9.00 - 20.00</li>
+                    <li class="locality__item">Вс:</li>
+                    <li class="locality__item">Выходной</li>
+                    <li class="locality__item">Минимальный заказ - 1 бутыль</li>
+                  </ul>
+                </div>
+
+                <div class="locality">
+                  <h6 class="locality__title">Поселок Котовского</h6>
+                  <ul class="locality__list">
+                    <li class="locality__item">Вт:</li>
+                    <li class="locality__item">10.00 - 20.00</li>
+                    <li class="locality__item">Чт:</li>
+                    <li class="locality__item">10.00 - 20.00</li>
+                    <li class="locality__item">Минимальный заказ - 2 бутыля</li>           
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div> 
+          <h4 class="service__subheading">Ваш заказ будет выполнен в удобное для Вас время!</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="coordinates">
+          <section class="brend">
+            <h6 class="brend__title">Природная питьевая вода</h6>
+            <div class="brend__background"></div>
+            <div class="brend__social">
+              <a class="brend__link" href="#">
+                <svg class="brend__svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48" fill="#525252">
+                  <path d="M47.76 24c0 13.12-10.637 23.76-23.757 23.76C10.877 47.76.24 37.12.24 24 .24 10.876 10.876.24
+                  24.002.24 37.123.24 47.76 10.876 47.76 24M20.034 38.85H26.2V24.01h4.163l.54-5.242H26.2v-3.083c0-1.156.77-1.427
+                  1.308-1.427h3.318v-5.09l-4.568-.018c-5.072 0-6.225 3.796-6.225 6.224v3.394H17.1v5.242h2.933v14.84z"/>
+                </svg>
+              </a>
+              <a class="brend__link" href="#">
+                <svg class="brend__svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48" fill="#525252">
+                  <path d="M47.762 24c0 13.12-10.64 23.76-23.76 23.76S.24 37.12.24 24C.24 10.876 10.88.24 24 .24S47.763 10.876 47.763
+                  24m-9.73-11.625c-1.178.7-2.482 1.208-3.87 1.48-1.11-1.185-2.695-1.925-4.448-1.925-3.364 0-6.093 2.73-6.093 6.095 0
+                  .478.055.94.157 1.388-5.063-.255-9.554-2.68-12.56-6.367-.523.898-.824 1.947-.824 3.064 0 2.113 1.076 3.978 2.71
+                  5.07-.997-.03-1.938-.306-2.76-.762v.077c0 2.95 2.1 5.414 4.89 5.975-.513.14-1.05.215-1.607.215-.393 0-.775-.04-1.146-.11.777
+                  2.42 3.026 4.183 5.692 4.233-2.086 1.634-4.712 2.607-7.567 2.607-.492 0-.977-.027-1.453-.084 2.696 1.73 5.9 2.737 9.34 2.737
+                  11.21 0 17.337-9.283 17.337-17.337 0-.263-.005-.527-.018-.79 1.19-.857 2.224-1.93 3.04-3.15-1.092.484-2.267.81-3.5.957 1.257-.753
+                  2.224-1.947 2.68-3.372"/>
+                </svg>
+              </a>
+              <a class="brend__link" href="#">
+                <svg class="brend__svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48" fill="#525252">
+                  <path d="M47.76 24c0 13.12-10.638 23.76-23.76 23.76C10.88 47.76.24 37.12.24 24 .24 10.877 10.877.24 24 .24 37.123.24 47.76 10.877
+                  47.76 24m-12.5 5c-2.622-2.434-2.272-2.042.89-6.25 1.922-2.563 2.695-4.127 2.45-4.797-.228-.64-1.64-.47-1.64-.47l-4.71.03s-.352-.048
+                  -.61.106c-.25.15-.414.504-.414.504s-.742 1.982-1.734 3.67c-2.094 3.558-2.935 3.746-3.277 3.523-.796-.516-.597-2.068-.597-3.17
+                  0-3.45.522-4.888-1.02-5.26-.51-.124-.887-.205-2.195-.22-1.678-.015-3.1.008-3.904.4-.537.262-.95.846-.698.88.31.04
+                  1.016.19 1.388.698.484.656.464 2.13.464 2.13s.282 4.057-.646 4.562c-.632.347-1.503-.36-3.37-3.588-.958-1.653-1.68-3.482-1.68-3.482s
+                  -.14-.344-.392-.527c-.3-.22-.722-.297-.722-.297l-4.47.018s-.673-.002-.918.29c-.22.26-.018.752-.018.752s3.5 8.104 7.463 12.23c3.64
+                  3.784 7.765 3.36 7.765 3.36h1.867s.566.113.854-.19c.265-.287.256-.645.256-.645s-.034-2.512 1.13-2.883c1.15-.36 2.623 2.43 4.187
+                  3.497 1.18.813 2.078.634 2.078.634l4.18-.056s2.187-.136 1.15-1.858c-.087-.14-.605-1.27-3.11-3.59"/>
+                </svg>
+              </a>
+              <a class="brend__link" href="#">        
+                <svg class="brend__svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="-455 257 48 48" fill="#525252">
+                  <path d="M-431 257.013c13.248 0 23.987 10.74 23.987 23.987s-10.74 23.987-23.987 23.987-23.987-10.74-23.987-23.987 10.74-23.987
+                  23.987-23.987zm11.815 18.08c-.25-1.337-1.363-2.335-2.642-2.458-3.054-.196-6.12-.355-9.178-.357-3.06-.002-6.113.154-9.167.347-1.284.124-2.397
+                  1.117-2.646 2.46-.284 1.932-.426 3.884-.426 5.835s.142 3.903.426 5.836c.25 1.342 1.362 2.454 2.646 2.577 3.055.193 6.107.39 9.167.39 3.058
+                  0 6.126-.172 9.178-.37 1.28-.124 2.392-1.27 2.642-2.606.286-1.93.43-3.88.43-5.828 0-1.95-.144-3.897-.43-5.827zm-14.59 9.342v-7.115l6.626
+                  3.558-6.626 3.557z"/>
+                </svg>
+              </a>
+              <a class="brend__link" href="#">
+                <svg class="brend__svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="-455 257 48 48" fill="#525252">
+                  <path d="M-430.938 256.987c13.227 0 23.95 10.723 23.95 23.95 0 13.227-10.723 23.95-23.95 23.95-13.227 0-23.95-10.723-23.95-23.95
+                  0-13.227 10.723-23.95 23.95-23.95zm9.53 11.726h-19.06c-1.483 0-2.687 1.204-2.687 2.69v19.07c0 1.485 1.203 2.69 2.688 2.69h19.06c1.484 0
+                  2.688-1.205 2.688-2.69v-19.07c0-1.486-1.203-2.69-2.687-2.69zm-9.543 7.53c2.583 0 4.677 2.096 4.677 4.68 0 2.586-2.095 4.68-4.678 4.68-2.585
+                  0-4.68-2.095-4.68-4.68 0-2.584 2.095-4.68 4.68-4.68zm9.37 13.08c0 .54-.436.98-.976.98h-16.78c-.54 0-.976-.44-.976-.98V279.08h2.123c-.146.586-.225
+                  1.2-.225 1.83 0 4.145 3.358 7.505 7.5 7.505 4.142 0 7.5-3.36 7.5-7.504 0-.63-.08-1.244-.226-1.83h2.06v10.244zm.064-14.093c0
+                  .54-.438.978-.977.978h-2.775c-.54 0-.977-.438-.977-.978v-2.777c0-.54.438-.978.977-.978h2.775c.54 0 .977.438.977.978v2.777z"/>
+                </svg>                  
+              </a>
+            </div>     
+            <p class="brend__text">© 2018 ТМ "Петроверовская"</p>
+          </section>
+          <section class="creator">
+            <h6 class="creator__title">Производитель</h6>
+            <div class="creator__info">
+              <div class="creator__links">
+                <a class="link creator__link" href="#">
+                  <ul class="creator__list">
+                    <li class="creator__item">ЧП "Новатор"</li>
+                    <li class="creator__item">Одесская обл., Ширяевский р-н,</li>
+                    <li class="creator__item">с. Петроверовска, ул. Туглука, 14</li>
+                  </ul>
+                </a>
+              </div>
+            </div>
+            <div class="creator__info">
+              <div class="creator__links">
+                <a class="creator__link creator__link_tel" href="#">+38 (048) 704 20 68</a>
+              </div>
+            </div>
+            <div class="creator__info">
+              <div class="creator__links">
+                <a class="creator__link creator__link_mail" href="mailto:info@petrovirivska.com.ua">info@petrovirivska.com.ua</a>
+              </div>      
+            </div>
+          </section>
+          <section class="contact">   
+            <h6 class="contact__title">Служба доставки воды</h6>
+            <ul class="contact__list">
+              <li class="contact__item">
+                <a class="contact__link" href="#">(066) 224 20 20</a>
+              </li>
+              <li class="contact__item">
+                <a class="contact__link" href="#">(068) 224 20 20</a>
+              </li>
+              <li class="contact__item">
+                <a class="contact__link" href="#">(073) 224 20 20</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
