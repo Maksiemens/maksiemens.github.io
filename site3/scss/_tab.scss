@@ -1,0 +1,432 @@
+
+/* Только для устройств со средним размером экрана */
+@media screen and (min-width: 768px)  {  
+
+    // Блок хедера
+    .header {
+        padding: 50px 0 90px 0;
+        background-image: url("../images/tab/bg_header_tab.png");
+    }
+
+    // Вверх блока шапки (логотип и сведения)
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    // Блок Логотипа
+    .logo {
+
+        width: 189px;
+          
+        &__link {
+            width: 189px;
+            height: 33px;
+            background-image: url("../images/tab/icon_logo_tab.svg");
+            background-size: 189px 33px;
+        }
+    }
+
+    // Блок сведения
+    .subscription {
+        display: block;
+        width: 200px;
+
+        &__title {
+            color: #FFF;
+            font-size: 14px;
+            font-family: 'Proxima Nova Lite';
+        }
+    }
+
+    // Цетр блока шапки (заголовок)
+    .header-center {
+        margin-top: 195px;
+        padding-left: 90px;
+    }
+
+    // Блок заголовка
+    .caption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   
+        font-size: 64px;
+
+        &_right {
+            margin-top: 30px;
+        }
+        
+    }
+    
+    // Низ блока шапки (загрузки и навигация)
+    .header-bottom {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    // Блок кнопок загрузки приложений
+    .downloads {
+    
+        order: 1;
+      
+
+        &__link {
+            width: 311px;
+            padding: 26px 67px 25px 104px;
+            border-radius: 50px;
+            box-shadow: 8px 14px 24px #0a0e34;
+            
+            &::before {
+                width: 33px;
+                height: 37px;
+                background-image: url("../images/tab/icon_apple_tab.svg"); 
+                background-size: 33px 37px;
+                left: 45px;
+                top: 20px;
+            }
+            
+            &_google {
+                padding: 25px 85px 25px 125px;
+
+                &::before {
+                    width: 36px;
+                    height: 39px;
+                    background-image: url("../images/tab/icon_google_tab.svg"); 
+                    background-size: 36px 39px;
+                    left: 65px;
+                }
+            }
+        }
+    
+        &__text {
+            width: 140px;
+            font-size: 14px;
+        }
+    }
+    
+    
+    // Блок Навигации
+    .nav {
+        margin-top: 185px;
+        order: 0;
+        width: 100%;
+
+        &__list {
+            width: 86.71875100%;
+        }
+    
+        &__item {
+            margin-left: 0;
+        }
+    
+        &__link {
+            font-size: 16px;
+        }  
+    }
+    
+
+
+
+
+    // Блок Контента
+    .main {
+    
+    }
+
+
+    // Информация про спортсменов
+    // Блок контента 
+    .info {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        &_mob {
+            display: none;
+        }
+    }
+
+    //  Декоративное изображение
+    .bg-players {
+        width: 335px;
+        height: 730px;
+        background-image: url("../images/tab/bg_footballer_tab.png");
+
+        margin: 75px 0 0 0;
+
+        &_basketballer {
+            width: 436px;
+            height: 562px;
+            background-image: url("../images/tab/bg_basketballer_tab.png");
+            align-self: flex-end; 
+            margin: 35px 0 0 0;
+        }
+    }
+
+    // Обертка контента, цветные линии
+    .content-wrap {
+        background-color: #FFF;
+    
+        &_light {
+            background-color: #f5f4f9;
+        }
+
+        &_dark {
+            background-color: #5e42b0;   
+        }
+
+        &_darker {
+            background-color: #090c35;
+        }
+    }
+
+
+    // Контент про спортсменов
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        padding: 40px 55px 40px 0;
+
+     
+        &_leftside {
+            padding: 50px 0 50px 30px;
+            align-items: flex-start;
+        }
+
+
+        &__title {
+            width: 53.2552%;
+
+            display: flex;
+            align-items: center;
+            color: #c1c1c1;
+            font-size: 36px;       
+            
+            &_mt {
+                margin-top: 60px;
+            }
+        }
+
+        &__text {
+            margin-top: 30px;
+            width: 53.2552%;
+            font-size: 18px;
+            line-height: 28px;
+    
+            &_colored {
+                color: #FFF;
+            }
+        }
+
+        &__heading {
+            width: 53.2552%;
+            color: #e7e7e7;
+            font-size: 90px;
+        }
+
+
+
+
+
+        &__number {
+            color: #000;
+            font-size: 18px;
+
+            &_colored {
+                color: #8765dd;
+            }
+        
+            &::after {
+                content: "";
+                display: block;
+                height: 5px;
+                border-radius: 2px;
+                background-color: #5e42b0;
+            }
+    
+            &_underline {
+                &::after {
+                    background-color: #efefef;
+                }
+            } 
+        } 
+
+    }
+
+   
+
+    .appeal {
+
+    }
+  
+
+
+    .article {
+
+        padding-left: 30px;
+
+        &__title {
+            margin: 80px 0 0 0 ;
+           
+            color: #c1c1c1;
+            font-size: 90px;   
+
+            position: relative;      
+        }
+
+        &__number {
+            color: #f5f6f7;
+            font-size: 24px;
+            background-color: #5e42b0;
+            padding: 43px;
+
+            position: absolute;
+            bottom: 150px;
+         
+            &::after {
+                content: "";
+                display: block;
+                height: 5px;
+                background-color: #FFF;
+                opacity: 0.3;
+            }
+
+        }
+
+
+        &__text {
+            width: 85.2864583%;
+            margin-top: 35px;
+           
+            font-size: 24px;
+            line-height: 28px;
+
+          
+            &::after {
+                content: "";
+                margin-top: 35px;
+                display: block;
+                width: 22px;
+                height: 5px;
+                border-radius: 2px;
+                background-color: #5e42b0;
+            }
+        }
+    }
+    
+       
+
+    .bg-people {
+        width: 100%;
+        padding-bottom: 76.0416667%;
+        background-image: url("../images/tab/bg_human1_tab.png");
+
+        &_human2 {
+            background-image: url("../images/tab/bg_human2_tab.png");
+        }
+
+        &_human3 {
+            background-image: url("../images/tab/bg_human3_tab.png");
+        }
+
+    }
+    
+
+
+    
+
+
+
+    
+    .footer {
+        margin-top: 100px;
+        padding: 125px 0 220px 0;
+        background-image: url("../images/tab/bg_footer_tab.png");
+    }
+
+
+    .footer-bottom {
+        padding: 35px 0;
+    }
+
+
+
+    .footer-top {
+
+        &__title {
+            margin-top: 80px;
+            font-size: 80px;
+        }
+    
+        &__subtitle {
+            margin-top: 30px;
+            color: #9b8ec1;
+            font-size: 36px;
+        }
+    }
+    
+
+
+
+
+
+    .footer-caption {
+
+        &__title {
+            margin-top: 80px;
+            font-size: 80px;
+        }
+    
+        &__subtitle {
+            margin-top: 30px;
+            color: #9b8ec1;
+            font-size: 36px;
+        }
+    }
+    
+
+
+
+
+
+    .button {
+    
+        &__link {
+            width: 130px;
+            height: 137px;
+            background-image: url("../images/tab/icon_button_tab.svg");
+            background-size: 130px 137px;
+        }
+    }
+       
+    .social {
+    
+        &__link {
+            width: 15px;
+            height: 27px;
+            background-image: url("../images/tab/icon_facebook_tab.svg");
+            background-size: 15px 27px;
+    
+            &_twitter {
+                width: 27px;
+                height: 22px;
+                background-image: url("../images/tab/icon_twitter_tab.svg");
+                background-size: 27px 22px;
+            }
+    
+            &_insta {
+                width: 24px;
+                height: 25px;
+                background-image: url("../images/tab/icon_insta_tab.svg");
+                background-size: 24px 25px;
+            }
+        }
+    }
+}

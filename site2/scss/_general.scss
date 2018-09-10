@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+//Выравнивание контента 1000px/
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+//Очистка floatов/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+// Общие классы для всех страницы
+// Общий класс для всех титульних частей
+.title {
+    color: #d03958;
+    font-family: 'montserratbold';
+    font-size: 90px;
+    text-transform: uppercase;
+}
+
+// Общий класс для всех текстов
+.text {
+    color: #161616;
+    font-family: 'pt_serifregular';
+    font-size: 20px;
+}
+// Общий класс для всех ссылок
+.decor {
+    display: block;
+    color: #1b1b1b;
+    font-family: 'montserratbold';
+    font-size: 18px;
+}
+// Общий класс для всех кнопок
+.button {
+    display: block;
+    color: #161616;
+    font-family: 'montserratbold';
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: #e3d5b8;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+// Общий класс для всех фото-иконок на странице, относится к галлерее
+.photo {
+    &::before {
+        content: "";
+        display: block;
+        width: 105px;
+        height: 105px;
+        background-repeat: no-repeat;
+        background-size: 105px 105px;
+        border-radius: 50%;
+        box-shadow: 0 -15px 25px rgba(227, 213, 184, 0.9);
+        // box-shadow: inset 0 25px 25px rgba(227, 213, 184, 0.9); смотрится убого
+    }
+}
+
+// Общий класс для всех фото-иконок с отзывами
+.account {
+   &::before{
+        @extend .photo;
+        position: absolute;
+        top: 20px;
+        right: -50px;
+   }
+}
+
+// Общий класс для всех иконок на странице, относится к Our Service
+.emblem {
+    &::before {
+        content: "";
+        display: block;
+        width: 174px;
+        height: 150px;
+        background-repeat: no-repeat;
+        background-size: 174px 150px; 
+        // Для выравнивая иконки в центре при исп. flex  
+        margin: auto;
+    }
+}
+
+// Селекторы атрибутов
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+input[type="submit"] {
+    outline: none;
+    border: none;
+    width: 353px;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 5px;    
+    color: #b5b5b5;
+    font-family: 'pt_serifregular';
+    font-size: 20px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: #161616;
+    color: #FFF;
+    font-family: 'montserratbold';
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+// Оформление нажатого checkbox'a для всех chekbox'ов
+input[type="checkbox"]:checked + .pressed::after {
+    content: "\2714";
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    color: #000;
+}

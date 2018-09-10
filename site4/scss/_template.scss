@@ -1,0 +1,40 @@
+
+%title_style_1 {
+    font-family: 'GothamProMedium', sans-serif;
+    font-size: 14px;
+    color: #566375;
+}
+
+%title_style_2 {
+    font-family: 'GothamProMedium', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+%text {
+    color: #566375;
+    font-family: 'GothamProRegular';
+    font-size: 14px;
+}
+
+%link {
+    text-decoration: none;
+}
+
+%more_link {
+    display: block;
+    position: relative;
+
+    padding: 10px 20px 10px 38px;
+
+    border: 2px solid #fff;
+    border-radius: 25px 25px 25px 25px;      
+    
+    color: #fff;
+    font-family: 'GothamProMedium';
+    font-size: 12px;
+    text-transform: uppercase;
+
+    text-decoration: none;
+}
