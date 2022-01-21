@@ -1,0 +1,122 @@
+* {
+	box-sizing: border-box;
+}
+
+.x-axis-division-path {
+	stroke:	none;
+}
+
+/* Below, we set the tick length to 10px. The stroke-dasharray only displays 6px to create a minor tick effect. */
+.minor line {
+	/* stroke: #777;
+	stroke-width: 1px; 
+
+	/* stroke-dasharray: 6,4; */
+	stroke-width: 0.8px; 
+}
+
+.minorMiddle {
+
+}
+
+
+/*Параметры контейнера*/
+.app {
+	width: 100%;
+}
+
+/*Ось координат Х и Y*/
+.y-axis path,
+.x-axis path {
+	stroke:	rgb(211, 211, 211);
+	stroke-width: 1;
+}
+
+.tick line {
+	fill: rgba(250, 96, 96);
+	stroke:	rgba(211, 211, 211);
+}
+
+
+/*Цифры на осях Х и Y*/
+.tick text,
+.y-text,
+.x-text {
+	fill: rgb(128, 128, 128);
+	font-family: Arial, sans-serif;
+	font-size: 8px;
+}
+
+/*Цифры координат возле кружка Х и Y*/
+.y-text, .x-text {
+	fill: rgb(0, 0, 0);
+}
+
+/*Засечки на осях Х и Y*/
+.tick .tick-line {
+	fill: rgb(0, 0, 0);
+}
+
+/*Сетка на осях Х и Y*/
+.tick .grid-line {
+	fill: none;
+	stroke:	rgba(211, 211, 211, 0.3);
+}
+
+.small-line {
+	fill: rgb(0, 0, 0);
+}
+
+
+/*Закрашеная область*/
+/* .area {
+	fill: rgba(144, 238, 144, 0.5);
+}  */
+
+/* Контур закрашеваемой области (бордер) */
+.border-line {
+	fill: none;
+	stroke: rgb(0, 128, 0);
+	stroke: #598bbe;
+	
+	/* stroke-width: 1.5; */
+}
+
+.border-line1 {
+	fill: none;
+	/* stroke: rgb(0, 0, 128); */
+	stroke: transparent;
+	stroke-width: 2;
+}
+
+/* Вертикальная линия */
+.vertical-line {
+	stroke: rgb(255, 0, 0);
+	stroke-width: 1;
+}
+
+/* Текстбоксы */
+.y-text-box, .x-text-box {
+	fill: rgba(45,145,255, .5);
+}
+
+/* Круг */
+.circle {
+	fill: rgba(144, 238, 144, .5);
+	stroke: rgb(0, 128, 0);
+}
+
+/* Блок линии, круга, текстбокса, текстов с координат */
+.line-wrap {
+	transition: opacity 0.3s;
+	opacity: 0;
+}
+
+.active {
+	opacity: 1;
+}
+
+/* Класс для того чтобы спрятать текст и блоки его, когда circle внизу */
+.hide {
+	opacity: 0;
+}
